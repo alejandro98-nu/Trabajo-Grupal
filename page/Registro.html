@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONNIE-GYM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="encabezado">
+            <img class="img-logo" src="../asset/image/Recurso-7.jpeg" alt="Logo de la página">
+        <div class="div-1">
+            
+            <nav class="nav1">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nutricion.html">Rutinas y Alimentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-button" href="./Registro.html">REGISTRATE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main class="main-form">
+        <br>
+        <br>
+        <div class="form-container">
+            <h2 class="h2form">Inscripción al Gym</h2>
+            <form action="/submit" method="POST">
+                <label class="labelform" for="nombre">Nombre completo</label>
+                <input class="input-form" type="text" name="nombre" placeholder="Escribe tu nombre completo" required>
+                
+                <label class="labelform" for="email">Correo electrónico</label>
+                <input class="input-form" type="email" name="email" placeholder="Escribe tu correo" required>
+                
+                <label class="labelform" for="telefono">Teléfono</label>
+                <input class="input-form" type="tel" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                
+                <label class="labelform" for="edad">Edad</label>
+                <input class="input-form" type="number" name="edad" min="12" max="99" required>
+                
+                <label class="labelform" for="plan">Plan de membresía</label>
+                <select class="select-form" name="plan" required>
+                    <option value="">Selecciona un plan</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="trimestral">Trimestral</option>
+                    <option value="anual">Anual</option>
+                </select>
+                
+                <label class="labelform" for="comentarios">Comentarios o preguntas</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios o preguntas"></textarea>
+                
+                <button class="button-form" type="submit">Enviar Inscripción</button>
+            </form>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <!-- Pie de página -->
+    <footer class="pie-de-pag">
+        <p class="p-pag"><a href="">contacto@RONNIEGYM.com</a></p>
+        <p class="p-pag">Síguenos en nuestras redes sociales:</p>
+        <ul>
+            <li class="icon"><a target="_blank" class="aicon" href="https://www.facebook.com/RONNIEGYM"> <img class="imgicon" src="../asset/image/iconFB.png" alt="Facebook"></a></li>
+            <li class="icon"><a target="_blank" class="aicon" href="https://www.instagram.com/RONNIEGYM"> <img class="imgicon" src="../asset/image/iconIG.svg" alt="Instagram"></a></li>
+            <li class="icon"><a target="_blank" class="aicon" href="https://www.twitter.com/RONNIEGYM"> <img class="imgicon" src="../asset/image/iconTW.png" alt="Twitter"></a></li>
+        </ul>
+        <p class="p-pag">&copy; 2024 acondicionamiento Fisico Online. Todos los derechos reservados. Diseñado por EL-FIT-TEAM</p>
+    </footer>
+
+</body>
+</html>
